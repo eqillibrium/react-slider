@@ -1,0 +1,95 @@
+.slider {
+    background: pink;
+    max-width: 1000px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: opacity ease-in-out;
+}
+
+.left {
+    flex: 1;
+    padding: 0 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.arrow {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .3s;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.arrowLeft {
+    left: 24px;
+    top: calc(50% - 20px)
+}
+
+.arrowRight {
+    right: 24px;
+    top: calc(50% - 20px);
+    transform: rotate(180deg);
+}
+
+.arrow svg {
+    fill: hotpink;
+}
+
+.text {
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    margin-bottom: 34px;
+}
+
+.name {
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+}
+
+.jobPosition {
+    color: white;
+    font-size: 17px;
+    line-height: 100%;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
